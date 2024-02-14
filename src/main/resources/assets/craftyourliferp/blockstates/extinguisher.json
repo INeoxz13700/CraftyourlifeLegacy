@@ -1,0 +1,44 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "craftyourliferp:extinguisher.obj",
+    "custom": { "flip-v": true }
+  },
+  "variants": {
+    "inventory": [
+      {
+        "transform": {
+          "thirdperson_lefthand": {
+  			"rotation": [ { "x": 70 }, { "y": 0 }, { "z": 0 } ],
+            "translation": [ 0, -0.1, -0.5 ],
+            "scale": 0.015
+          },
+          "thirdperson_righthand": {
+  			"rotation": [ { "x": 90 }, { "y": 90 }, { "z": -15 } ],
+            "translation": [ 0, -0.1, -0.5 ],
+            "scale": 0.015
+          },
+          "gui": {
+            "rotation": [ { "x": 0 }, { "y": 45 }, { "z": 0 } ],
+            "translation": [ 0, -0.50, 0 ],
+            "scale": 0.015
+          },
+          "firstperson_righthand": {
+            "rotation": [ { "x": 180 }, { "y": 100 }, { "z": 170 } ],
+            "translation": [ 0, -0.25, 0 ],
+            "scale": 0.01
+          },
+          "firstperson_lefthand": {
+            "rotation": [ { "x": 180 }, { "y": -100 }, { "z": 170 } ],
+            "translation": [ 0, -0.25, 0 ],
+            "scale": 0.01
+          },
+          "ground": {
+            "rotation": [ { "x": 90 }, { "y": 0 }, { "z": 45 } ],
+            "scale": 0.015
+          }
+        }
+      }
+    ]
+  }
+}

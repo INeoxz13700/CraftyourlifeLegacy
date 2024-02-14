@@ -1,0 +1,121 @@
+{
+	"forge_marker": 1,
+	  "defaults": {
+	    "model": "craftyourliferp:atm.obj",
+	    "custom": { "flip-v": true }
+	    
+	  },
+    "variants": {
+        "facing=north,render_model=true": { 
+        	"model": "craftyourliferp:atm.obj",
+        	"transform": {
+				"translation": [0.45, 0, 0.45],
+				"scale": 0.9,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,render_model=true":  { 
+        	"model": "craftyourliferp:atm.obj", 
+        	"transform": {
+				"translation": [-0.45, 0, 0.45],
+				"scale": 0.9,
+				"rotation": [0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,render_model=true": { 
+        	"model": "craftyourliferp:atm.obj",
+        	"transform": {
+				"translation": [-0.45, 0, -0.45],
+				"scale": 0.9,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,render_model=true":  {
+        	"model": "craftyourliferp:atm.obj", 
+        	"transform": {
+				"translation": [0.45, 0, -0.45],
+				"scale": 0.9,
+				"rotation": [0,90,0]
+			},
+        	"y": 90 
+         },
+        "facing=north,render_model=false": 
+        { 
+        	"model": "craftyourliferp:atm.obj", 
+        	"transform": {
+				"translation": [0.45, 0, -0.45],
+				"scale": 0.9,
+				"rotation": [0,90,0]
+			},
+        	"y": 90 
+        },
+        "facing=east,render_model=false":  
+        { 
+        	"model": "craftyourliferp:atm.obj", 
+        	"transform": {
+				"translation": [0.45, 0, -0.45],
+				"scale": 0.9,
+				"rotation": [0,90,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,render_model=false": 
+        { 
+        	"model": "craftyourliferp:atm.obj", 
+        	"transform": {
+				"translation": [0.45, 0, -0.45],
+				"scale": 0.9,
+				"rotation": [0,90,0]
+			},
+        	"y": 90 
+        },
+        "facing=west,render_model=false":  
+        { 
+        	"model": "craftyourliferp:atm.obj", 
+        	"transform": {
+				"translation": [0.45, 0, -0.45],
+				"scale": 0.9,
+				"rotation": [0,90,0]
+			},
+        	"y": 90 
+        },
+    "inventory": [
+      {
+          "transform": {
+          "thirdperson_lefthand": {
+            "rotation": [ { "x": 0 }, { "y": 45 }, { "z": 0 } ],
+            "translation": [0, 1, 0.70 ],
+            "scale": 1.0
+          },
+          "thirdperson_righthand": {
+            "rotation": [ { "x": 0 }, { "y": 45 }, { "z": 0 } ],
+            "translation": [0.85, 1, 0 ],
+            "scale": 1.0
+          },
+          "gui": {
+            "rotation": [ { "x": 0 }, { "y": 220 }, { "z": 0 } ],
+            "translation": [ -0.25, -0.15, 0 ],
+            "scale": 0.35
+          },
+          "firstperson_righthand": {
+            "rotation": [ { "x": 45 }, { "y": 0 }, { "z": 0 } ],
+            "translation": [ 1, 0.25, 0.5 ],
+            "scale": 1.0
+          },
+          "firstperson_lefthand": {
+            "rotation": [ { "x": 45 }, { "y": 0 }, { "z": 0 } ],
+            "translation": [ 0, 0.25, 0.5 ],
+            "scale": 1.0
+          },
+          "ground": {
+            "rotation": [ { "x": 0 }, { "y": 0 }, { "z": 0 } ],
+            "translation": [ 0.5, 0.0, 0.5 ],
+            "scale": 1
+          }
+        }
+      }
+    ]
+  }
+}

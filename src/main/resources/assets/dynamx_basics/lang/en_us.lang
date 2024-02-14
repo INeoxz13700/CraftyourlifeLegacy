@@ -1,0 +1,10 @@
+item.dynx.dynamx_basics.car_keys.name=Car keys
+basadd.key.associed=Key associed to %s !
+basadd.key.assoc.error=The vehicle already have an associated key !
+basadd.key.locked=Vehicle locked !
+basadd.key.unlocked=Vehicle unlocked !
+basadd.key.invalid=Invalid key !
+basadd.key.linked.to=%s's key
+basadd.fuel.jerrycan=Jerrycan's fuel : %s
+
+item.dynx.dynamx_basics.fuel_jerrycan.name=Fuel jerrycan

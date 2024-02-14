@@ -1,0 +1,145 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+    }
+}
+        
+apply plugin: 'net.minecraftforge.gradle'
+// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+
+version = '1.0.0'
+group = 'fr.innog.craftyourliferp.common' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'craftyourliferp'
+compileJava.options.encoding = 'UTF-8'
+
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+
+
+configurations {
+    customLibs
+}
+
+minecraft {
+    // The mappings can be changed at any time, and must be in the following format.
+    // snapshot_YYYYMMDD   Snapshot are built nightly.
+    // stable_#            Stables are built at the discretion of the MCP team.
+    // Use non-default mappings at your own risk. they may not always work.
+    // Simply re-run your setup task after changing the mappings to update your workspace.
+    //mappings channel: 'snapshot', version: '20171003-1.12'
+    mappings channel: 'snapshot', version: '20171003-1.12'
+    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
+    
+    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+
+    // Default run configurations.
+    // These can be tweaked, removed, or duplicated as needed.
+    runs {
+        client {
+            workingDirectory project.file('run')
+
+            // Recommended logging data for a userdev environment
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            property 'forge.logging.console.level', 'debug'
+        }
+
+        server {
+
+            // Recommended logging data for a userdev environment
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            property 'forge.logging.console.level', 'debug'
+        }
+    }
+}
+
+repositories {
+    maven {
+        url 'https://maven.dynamx.fr/artifactory/DynamXRepo'
+    }
+    maven {
+        url 'https://maven.dynamx.fr/artifactory/' + 'ACsGuisRepo'
+    }
+}
+
+
+dependencies {
+    // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
+    // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
+    // The userdev artifact is a special name and will get all sorts of transformations applied to it.
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2859'
+	
+	customLibs 'com.google.code.gson:gson:2.10.1'
+	customLibs 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation fg.deobf('fr.dynamx:DynamX:4.0.1-beta')
+    implementation fg.deobf('fr.aym.acsguis:ACsGuis:1.2.11')
+
+
+	customLibs files('libs/advancedui-1.0.0.jar')
+	
+	implementation files('libs/server/CYLApiInformations.jar')
+
+	
+	 if (project.hasProperty('client')) {
+	 	customLibs files('libs/client/CYLApiInformations.jar')
+    } else if (project.hasProperty('server')) {
+		customLibs files('libs/server/CYLApiInformations.jar')
+    }
+
+	customLibs group: 'mysql', name: 'mysql-connector-java', version: '8.0.33'
+	customLibs group: 'com.ibm.icu', name: 'icu4j', version: '51.2'
+	customLibs group: 'org.jprocesses', name: 'jProcesses', version: '1.6.4'
+	customLibs group: 'org.xerial', name: 'sqlite-jdbc', version: '3.30.1'
+	customLibs group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.7.1'
+
+	implementation configurations.customLibs
+}
+
+jar {
+	duplicatesStrategy = 'include'
+	
+	from('src/main/resources') {
+        include 'mcmod.info'
+        include 'pack.mcmeta'
+    }
+	
+	if (project.hasProperty('client')) {
+		archiveName = archivesBaseName + version + '-client.jar'
+    } else if (project.hasProperty('server')) {
+		archiveName = archivesBaseName + version + '-server.jar'
+    }
+
+}
+
+jar {
+    from {
+        configurations.customLibs.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+// Example configuration to allow publishing using the maven-publish task
+// This is the preferred method to reobfuscate your jar file
+jar.finalizedBy('reobfJar') 
+// However if you are in a multi-project build, dev time needs unobfed jar files, so you can delay the obfuscation until publishing by doing
+//publish.dependsOn('reobfJar')
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifact jar
+        }
+    }
+    repositories {
+        maven {
+            url "file:///${project.projectDir}/mcmodsrepo"
+        }
+    }
+}

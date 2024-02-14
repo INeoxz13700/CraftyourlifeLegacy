@@ -1,0 +1,9 @@
+# Blender 3.6.5 MTL File: 'None'
+# www.blender.org
+
+newmtl atm
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+d 1.000000
+map_Kd craftyourliferp:blocks/atm

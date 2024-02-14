@@ -1,0 +1,466 @@
+{
+	"forge_marker": 1,
+	  "defaults": {
+	    "model": "craftyourliferp:paintings/painting_0.obj",
+	    "custom": { "flip-v": true }
+	    
+	  },
+    "variants": {
+        "facing=north,painting_type=0": { 
+        	"model": "craftyourliferp:paintings/painting_0.obj",
+        	"transform": {
+				"translation": [0.35, 0.25, 0.48],
+				"scale": 0.73,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,painting_type=0":  { 
+        	"model": "craftyourliferp:paintings/painting_0.obj", 
+        	"transform": {
+				"translation": [-0.48, 0.25, 0.35],
+				"scale": 0.73,
+				"rotation": [ 0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,painting_type=0": { 
+        	"model": "craftyourliferp:paintings/painting_0.obj",
+        	"transform": {
+				"translation": [-0.35, 0.25, -0.48],
+				"scale": 0.73,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,painting_type=0":  {
+        	"model": "craftyourliferp:paintings/painting_0.obj", 
+        	"transform": {
+				"translation": [0.48, 0.25, -0.35],
+				"scale": 0.73,
+				"rotation": [ 0,90,0]
+			},
+        	"y": 90 
+         },
+        "facing=north,painting_type=1": { 
+        	"model": "craftyourliferp:paintings/painting_1.obj",
+        	"transform": {
+				"translation": [0.35, 0.25, 0.48],
+				"scale": 0.73,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,painting_type=1":  { 
+        	"model": "craftyourliferp:paintings/painting_1.obj", 
+        	"transform": {
+				"translation": [-0.48, 0.25, 0.35],
+				"scale": 0.73,
+				"rotation": [ 0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,painting_type=1": { 
+        	"model": "craftyourliferp:paintings/painting_1.obj",
+        	"transform": {
+				"translation": [-0.35, 0.25, -0.48],
+				"scale": 0.73,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,painting_type=1":  {
+        	"model": "craftyourliferp:paintings/painting_1.obj", 
+        	"transform": {
+				"translation": [0.48, 0.25, -0.35],
+				"scale": 0.73,
+				"rotation": [ 0,90,0]
+			},
+        	"y": 90 
+         },
+         "facing=north,painting_type=2": { 
+        	"model": "craftyourliferp:paintings/painting_2.obj",
+        	"transform": {
+				"translation": [0.35, 0.25, 0.48],
+				"scale": 0.73,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,painting_type=2":  { 
+        	"model": "craftyourliferp:paintings/painting_2.obj", 
+        	"transform": {
+				"translation": [-0.48, 0.25, 0.35],
+				"scale": 0.73,
+				"rotation": [ 0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,painting_type=2": { 
+        	"model": "craftyourliferp:paintings/painting_2.obj",
+        	"transform": {
+				"translation": [-0.35, 0.25, -0.48],
+				"scale": 0.73,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,painting_type=2":  {
+        	"model": "craftyourliferp:paintings/painting_2.obj", 
+        	"transform": {
+				"translation": [0.48, 0.25, -0.35],
+				"scale": 0.73,
+				"rotation": [ 0,90,0]
+			},
+        	"y": 90 
+         },
+         "facing=north,painting_type=3": { 
+        	"model": "craftyourliferp:paintings/painting_3.obj",
+        	"transform": {
+				"translation": [0.35, 0.25, 0.48],
+				"scale": 0.73,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,painting_type=3":  { 
+        	"model": "craftyourliferp:paintings/painting_3.obj", 
+        	"transform": {
+				"translation": [-0.48, 0.25, 0.35],
+				"scale": 0.73,
+				"rotation": [ 0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,painting_type=3": { 
+        	"model": "craftyourliferp:paintings/painting_3.obj",
+        	"transform": {
+				"translation": [-0.35, 0.25, -0.48],
+				"scale": 0.73,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,painting_type=3":  {
+        	"model": "craftyourliferp:paintings/painting_3.obj", 
+        	"transform": {
+				"translation": [0.48, 0.25, -0.35],
+				"scale": 0.73,
+				"rotation": [ 0,90,0]
+			},
+        	"y": 90 
+         },
+        "facing=north,painting_type=4": { 
+        	"model": "craftyourliferp:paintings/painting_4.obj",
+        	"transform": {
+				"translation": [0.35, 0.25, 0.48],
+				"scale": 0.73,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,painting_type=4":  { 
+        	"model": "craftyourliferp:paintings/painting_4.obj", 
+        	"transform": {
+				"translation": [-0.48, 0.25, 0.35],
+				"scale": 0.73,
+				"rotation": [ 0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,painting_type=4": { 
+        	"model": "craftyourliferp:paintings/painting_4.obj",
+        	"transform": {
+				"translation": [-0.35, 0.25, -0.48],
+				"scale": 0.73,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,painting_type=4":  {
+        	"model": "craftyourliferp:paintings/painting_4.obj", 
+        	"transform": {
+				"translation": [0.48, 0.25, -0.35],
+				"scale": 0.73,
+				"rotation": [ 0,90,0]
+			},
+        	"y": 90 
+         },
+         "facing=north,painting_type=5": { 
+        	"model": "craftyourliferp:paintings/painting_5.obj",
+        	"transform": {
+				"translation": [0.35, 0.25, 0.48],
+				"scale": 0.73,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,painting_type=5":  { 
+        	"model": "craftyourliferp:paintings/painting_5.obj", 
+        	"transform": {
+				"translation": [-0.48, 0.25, 0.35],
+				"scale": 0.73,
+				"rotation": [ 0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,painting_type=5": { 
+        	"model": "craftyourliferp:paintings/painting_5.obj",
+        	"transform": {
+				"translation": [-0.35, 0.25, -0.48],
+				"scale": 0.73,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,painting_type=5":  {
+        	"model": "craftyourliferp:paintings/painting_5.obj", 
+        	"transform": {
+				"translation": [0.48, 0.25, -0.35],
+				"scale": 0.73,
+				"rotation": [ 0,90,0]
+			},
+        	"y": 90 
+         },
+         "facing=north,painting_type=6": { 
+        	"model": "craftyourliferp:paintings/painting_6.obj",
+        	"transform": {
+				"translation": [0.35, 0.25, 0.48],
+				"scale": 0.73,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,painting_type=6":  { 
+        	"model": "craftyourliferp:paintings/painting_6.obj", 
+        	"transform": {
+				"translation": [-0.48, 0.25, 0.35],
+				"scale": 0.73,
+				"rotation": [ 0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,painting_type=6": { 
+        	"model": "craftyourliferp:paintings/painting_6.obj",
+        	"transform": {
+				"translation": [-0.35, 0.25, -0.48],
+				"scale": 0.73,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,painting_type=6":  {
+        	"model": "craftyourliferp:paintings/painting_6.obj", 
+        	"transform": {
+				"translation": [0.48, 0.25, -0.35],
+				"scale": 0.73,
+				"rotation": [ 0,90,0]
+			},
+        	"y": 90 
+         },
+        "facing=north,painting_type=7": { 
+        	"model": "craftyourliferp:paintings/painting_7.obj",
+        	"transform": {
+				"translation": [0.35, 0.25, 0.48],
+				"scale": 0.73,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,painting_type=7":  { 
+        	"model": "craftyourliferp:paintings/painting_7.obj", 
+        	"transform": {
+				"translation": [-0.48, 0.25, 0.35],
+				"scale": 0.73,
+				"rotation": [ 0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,painting_type=7": { 
+        	"model": "craftyourliferp:paintings/painting_7.obj",
+        	"transform": {
+				"translation": [-0.35, 0.25, -0.48],
+				"scale": 0.73,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,painting_type=7":  {
+        	"model": "craftyourliferp:paintings/painting_7.obj", 
+        	"transform": {
+				"translation": [0.48, 0.25, -0.35],
+				"scale": 0.73,
+				"rotation": [ 0,90,0]
+			},
+        	"y": 90 
+         },
+        "facing=north,painting_type=8": { 
+        	"model": "craftyourliferp:paintings/painting_8.obj",
+        	"transform": {
+				"translation": [0.35, 0.25, 0.48],
+				"scale": 0.73,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,painting_type=8":  { 
+        	"model": "craftyourliferp:paintings/painting_8.obj", 
+        	"transform": {
+				"translation": [-0.48, 0.25, 0.35],
+				"scale": 0.73,
+				"rotation": [ 0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,painting_type=8": { 
+        	"model": "craftyourliferp:paintings/painting_8.obj",
+        	"transform": {
+				"translation": [-0.35, 0.25, -0.48],
+				"scale": 0.73,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,painting_type=8":  {
+        	"model": "craftyourliferp:paintings/painting_8.obj", 
+        	"transform": {
+				"translation": [0.48, 0.25, -0.35],
+				"scale": 0.73,
+				"rotation": [ 0,90,0]
+			},
+        	"y": 90 
+         },  
+        "facing=north,painting_type=9": { 
+        	"model": "craftyourliferp:paintings/painting_9.obj",
+        	"transform": {
+				"translation": [0.35, 0.25, 0.48],
+				"scale": 0.73,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,painting_type=9":  { 
+        	"model": "craftyourliferp:paintings/painting_9.obj", 
+        	"transform": {
+				"translation": [-0.48, 0.25, 0.35],
+				"scale": 0.73,
+				"rotation": [ 0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,painting_type=9": { 
+        	"model": "craftyourliferp:paintings/painting_9.obj",
+        	"transform": {
+				"translation": [-0.35, 0.25, -0.48],
+				"scale": 0.73,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,painting_type=9":  {
+        	"model": "craftyourliferp:paintings/painting_9.obj", 
+        	"transform": {
+				"translation": [0.48, 0.25, -0.35],
+				"scale": 0.73,
+				"rotation": [ 0,90,0]
+			},
+        	"y": 90 
+         }, 
+        "facing=north,painting_type=10": { 
+        	"model": "craftyourliferp:paintings/painting_10.obj",
+        	"transform": {
+				"translation": [0.35, 0.25, 0.48],
+				"scale": 0.73,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,painting_type=10":  { 
+        	"model": "craftyourliferp:paintings/painting_10.obj", 
+        	"transform": {
+				"translation": [-0.48, 0.25, 0.35],
+				"scale": 0.73,
+				"rotation": [ 0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,painting_type=10": { 
+        	"model": "craftyourliferp:paintings/painting_10.obj",
+        	"transform": {
+				"translation": [-0.35, 0.25, -0.48],
+				"scale": 0.73,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,painting_type=10":  {
+        	"model": "craftyourliferp:paintings/painting_10.obj", 
+        	"transform": {
+				"translation": [0.48, 0.25, -0.35],
+				"scale": 0.73,
+				"rotation": [ 0,90,0]
+			},
+        	"y": 90 
+         },
+        "facing=north,painting_type=11": { 
+        	"model": "craftyourliferp:paintings/painting_11.obj",
+        	"transform": {
+				"translation": [0.35, 0.25, 0.48],
+				"scale": 0.73,
+				"rotation": [ 0,0,0]
+			}
+        },
+        "facing=east,painting_type=11":  { 
+        	"model": "craftyourliferp:paintings/painting_11.obj", 
+        	"transform": {
+				"translation": [-0.48, 0.25, 0.35],
+				"scale": 0.73,
+				"rotation": [ 0,270,0]
+			},
+        	"y": 90 
+        },
+        "facing=south,painting_type=11": { 
+        	"model": "craftyourliferp:paintings/painting_11.obj",
+        	"transform": {
+				"translation": [-0.35, 0.25, -0.48],
+				"scale": 0.73,
+				"rotation": [ 0,180,0]
+			}, 
+        	"y": 180 
+        },
+        "facing=west,painting_type=11":  {
+        	"model": "craftyourliferp:paintings/painting_11.obj", 
+        	"transform": {
+				"translation": [0.48, 0.25, -0.35],
+				"scale": 0.73,
+				"rotation": [ 0,90,0]
+			},
+        	"y": 90 
+         },
+    "inventory": [
+      {
+          "transform": {
+          "thirdperson_lefthand": {
+            "rotation": [ { "x": 0 }, { "y": 120 }, { "z": 45 } ],
+            "translation": [0.25, 0, 0.25],
+            "scale": 0.5
+          },
+          "thirdperson_righthand": {
+            "rotation": [ { "x": 0 }, { "y": 120 }, { "z": 45 } ],
+            "translation": [0, 0.5, 0 ],
+            "scale": 0.5
+          },
+          "gui": {
+            "rotation": [ { "x": 0 }, { "y": 180 }, { "z": 0 } ],
+            "translation": [-0.25, 0.20, 0 ],
+            "scale": 0.5
+          },
+          "firstperson_righthand": {
+            "rotation": [ { "x": 0 }, { "y": 90 }, { "z": 0 } ],
+            "translation": [ -0.2, 0.5, 0 ],
+            "scale": 0.5
+          },
+          "firstperson_lefthand": {
+            "rotation": [ { "x": 0 }, { "y": -250 }, { "z": 0 } ],
+            "translation": [ 0.2, 0.5, 0.4 ],
+            "scale": 0.5
+          },
+          "ground": {
+            "rotation": [ { "x": 90 }, { "y": 0 }, { "z": 0 } ],
+            "translation": [0, -0.1, 0],
+            "scale": 0.5
+          }
+        }
+      }
+    ]
+  }
+}

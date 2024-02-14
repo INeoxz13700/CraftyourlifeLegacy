@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "craftyourliferp:items/bank_card"
+    }
+}

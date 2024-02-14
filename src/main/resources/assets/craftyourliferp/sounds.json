@@ -1,0 +1,122 @@
+{
+    "call":
+    {
+    "category": "player",
+    "sounds":
+        [
+            "craftyourliferp:call"
+        ]
+    },
+    "call_ringtone":
+    {
+    "category": "player",
+    "sounds":
+        [
+            "craftyourliferp:call_ringtone"
+        ]
+    },
+    "phonekey":
+    {
+    "category": "player",
+    "sounds":
+        [
+            "craftyourliferp:phonekey"
+        ]
+    },
+    "sms_received":
+    {
+    "category": "player",
+    "sounds":
+        [
+            "craftyourliferp:sms_received"
+        ]
+    },
+    "atm_press":
+    {
+    "category": "player",
+    "sounds":
+        [
+            "craftyourliferp:atm_press"
+        ]
+    },
+    "unkown_number":
+    {
+    "category": "player",
+    "sounds":
+        [
+            "craftyourliferp:unknown_number"
+        ]
+    },
+    "false_request":
+    {
+    "category": "player",
+    "sounds":
+        [
+            "craftyourliferp:false_request"
+        ]
+    },
+    "extinguisher":
+    {
+    "category": "player",
+    "sounds":
+        [
+            "craftyourliferp:extinguisher"
+        ]
+    },
+    "bird":
+    {
+    "category": "player",
+    "sounds":
+        [
+            "craftyourliferp:cosmetics/bird"
+        ]
+    },
+    "ballkick":
+    {
+    "category": "master",
+    "sounds":
+        [
+            "craftyourliferp:football-kick"
+        ]
+    },
+    "goal":
+    {
+    "category": "master",
+    "sounds":
+        [
+            "craftyourliferp:goal"
+        ]
+    },
+    "shield-hit":
+    {
+    "category": "master",
+    "sounds":
+        [
+            "craftyourliferp:shield-hit"
+        ]
+    },
+    "scream":
+    {
+    "category": "master",
+    "sounds":
+        [
+            "craftyourliferp:scream"
+        ]
+    },
+    "smoking_0":
+    {
+    "category": "master",
+    "sounds":
+        [
+            "craftyourliferp:smoking_state_0"
+        ]
+    },
+    "smoking_1":
+    {
+    "category": "master",
+    "sounds":
+        [
+            "craftyourliferp:smoking_state_1"
+        ]
+    } 
+}

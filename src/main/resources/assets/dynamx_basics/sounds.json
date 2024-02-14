@@ -1,0 +1,14 @@
+{
+  "klaxon1": {
+    "category": "record",
+    "sounds": [
+      "dynamx_basics:vehicle_klaxon"
+    ]
+  },
+  "siren1": {
+    "category": "record",
+    "sounds": [
+      "dynamx_basics:vehicle_siren_2"
+    ]
+  }
+}

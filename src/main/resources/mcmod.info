@@ -1,0 +1,16 @@
+[
+{
+  "modid": "craftyourliferp",
+  "name": "CraftYourLifeRP Mod",
+  "description": "Mod du serveur CraftYourLifeRP Legacy",
+  "version": "5.0.2",
+  "mcversion": "1.12.2",
+  "url": "https://www.craftyourliferp.fr/",
+  "updateUrl": "",
+  "authorList": ["INNOG"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["advancedui"]
+}
+]

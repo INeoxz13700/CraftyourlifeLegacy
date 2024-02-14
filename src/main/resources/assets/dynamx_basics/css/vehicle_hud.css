@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "dynamx_basics:e";
+  src: url("dynamx_basics:font/e.ttf");
+  font-size: 120px;
+}
+
+/* FuelTankController */
+
+/*#engine_fuel
+{
+    width: 100%;
+    height: 20px;
+    top: 96%;
+    bottom: 4%;
+    left: 50%;
+    right: 50%;
+    text-align: center;
+}*/
+
+/* BasicsAddonController */
+
+/**
+Because .speed_pane has a texture
+ */
+#fuel_gauge
+{
+    background-image: none;
+}
+
+#siren_hud
+{
+    top: 20px;
+    left: 5px;
+    height: 200px;
+}
+
+#siren_hud>label
+ {
+    top: auto;
+ }
+
+.hud_icon {
+    width: 10px;
+    height: 10px;
+}
+#icon_0 {
+    left: 28px;
+    top: 18px;
+    background-image: url("dynamx_basics:textures/light.png");
+}
+#icon_1 {
+    left: 41px;
+    top: 18px;
+    background-image: url("dynamx_basics:textures/limitor.png");
+}
+#icon_2 {
+    left: 52px;
+    top: 18px;
+    background-image: auto;
+}
+#icon_3 {
+    left: 24px;
+    top: 64px;
+    background-image: url("dynamx_basics:textures/fuelt.png");
+}
+#icon_4 {
+    left: 36px;
+    top: 64px;
+    background-image: url("dynamx_basics:textures/turnleft.png");
+}
+#icon_5 {
+    left: 46px;
+    top: 64px;
+    background-image: url("dynamx_basics:textures/turnright.png");
+}
+#icon_6 {
+    left: 57px;
+    top: 64px;
+    background-image: url("dynamx_basics:textures/fuelt.png");
+}
